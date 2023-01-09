@@ -5,5 +5,5 @@ import org.springframework.web.bind.annotation.GetMapping;
 @RestController
 public class image {
     @GetMapping ("/image")
-    public String getData() { return "Rahul's first docker images";}
+    public String getData() { return "Rahul's first docker imagess";}
 }
