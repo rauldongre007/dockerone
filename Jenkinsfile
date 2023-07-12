@@ -13,9 +13,9 @@ pipeline{
         }
        stage('Code packaging'){
             steps{
-                    echo 'Code compilation starting'
-                    sh 'mvn clean compile 2'
-                    echo 'code complied'
+                    echo 'Code packaging starting'
+                    sh 'mvn clean package'
+                    echo 'code packaged'
                     }
        }
 
