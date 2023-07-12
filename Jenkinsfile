@@ -1,6 +1,6 @@
 pipeline{
     tools{
-        maven 'maven-3.8.7'
+        maven 'maven-3.8.6'
     }
     stages{
         stage ('Code compilation'){
