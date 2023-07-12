@@ -1,6 +1,6 @@
 pipeline{
     tools{
-        maven 'maven-3.8.7'
+        maven 'maven-3.8.7git checkout'
     }
     stages{
         stage ('Code compilation'){
@@ -13,7 +13,7 @@ pipeline{
        stage('Code packaging'){
             steps{
                     echo 'Code compilation starting'
-                    sh 'mvn clean compile'
+                    sh 'mvn clean compile 2'
                     echo 'code complied'
                     }
        }
