@@ -1,6 +1,6 @@
 pipeline{
     tools{
-        maven 'maven-3.8.7git checkout'
+        maven 'maven-3.8.7'
     }
     stages{
         stage ('Code compilation'){
@@ -19,9 +19,7 @@ pipeline{
        }
 
     }
-
-
-
-
-
 }
+
+
+
