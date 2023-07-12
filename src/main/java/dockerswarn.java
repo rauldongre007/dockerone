@@ -6,5 +6,5 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class dockerswarn {
     @GetMapping ("/dockerswarn")
-    public String getData() { return " Docker swarn test pages 12072023";}
+    public String getData() { return " Docker swarn test pages docker_12072023";}
 }
