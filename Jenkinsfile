@@ -4,11 +4,18 @@ pipeline{
         maven 'maven_3.8.8'
     }
     stages{
-        stage ('Code compilation'){
+        stage ('Version checking'){
             steps{
-                    echo 'Code compilation starting'
-                    sh 'mvn clean compile'
-                    echo 'code complied'
+                    echo 'check java version'
+                    sh 'java -version'
+                    echo 'Java version checked'
+                    }
+        }
+           stage ('Git version'){
+            steps{
+                    echo 'check GIT version'
+                    sh 'git --version'
+                    echo 'GIT version checked'
                     }
         }
        stage('Code packaging'){
